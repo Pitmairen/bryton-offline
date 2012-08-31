@@ -129,7 +129,7 @@ class BrytonClient(QObject):
 
     def deleteTracks(self, track_ids):
         self._state = DELETE_TRACKS
-        self._writeRequest('$DelDevData', data=[self.server.session_id, "{}".format(','.join(track_ids))])
+        self._writeRequest('$DelDevData', data=[self.server.session_id, '"{}"'.format(','.join(track_ids))])
         self._req_state_on_ack = True
 
 

@@ -22,24 +22,24 @@ WebOb
 Screenshots
 ===========
 
-.. image:: https://github.com/pitmairen/brytonoffline/raw/master/screenshots/brytonoffline.png
+.. image:: https://github.com/pitmairen/bryton-offline/raw/master/screenshots/brytonoffline.png
    :height: 423px
    :width: 600 px
    :scale:  100%
 
 
-.. image:: https://github.com/pitmairen/brytonoffline/raw/master/screenshots/laps.png
+.. image:: https://github.com/pitmairen/brytoni-offline/raw/master/screenshots/laps.png
    :height: 456px
    :width: 643 px
    :scale:  100%
 
 
-.. image:: https://github.com/pitmairen/brytonoffline/raw/master/screenshots/upload.png
+.. image:: https://github.com/pitmairen/bryton-offline/raw/master/screenshots/upload.png
    :height: 482px
    :width: 621 px
    :scale:  100%
 
-.. image:: https://github.com/pitmairen/brytonoffline/raw/master/screenshots/export.png
+.. image:: https://github.com/pitmairen/bryton-offline/raw/master/screenshots/export.png
    :height: 480px
    :width: 623 px
    :scale:  100%

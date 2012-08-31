@@ -28,7 +28,7 @@ Screenshots
    :scale:  100%
 
 
-.. image:: https://github.com/pitmairen/brytoni-offline/raw/master/screenshots/laps.png
+.. image:: https://github.com/pitmairen/bryton-offline/raw/master/screenshots/laps.png
    :height: 456px
    :width: 643 px
    :scale:  100%

@@ -2,7 +2,7 @@
 import sys
 import argparse
 import logging
-
+import platform
 
 from PyQt4.QtGui import QApplication, QIcon
 
@@ -21,6 +21,9 @@ def main():
     args = app.arguments()
 
     args = map(str, args)
+
+    if platform.system() == 'Windows' and 'python' in args[0]:
+        args = args[1:]
 
     config = parse_args(args[1:])
 

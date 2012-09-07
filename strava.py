@@ -516,7 +516,7 @@ class StravaUpload(QObject):
     def _uploadFailed(self, msg):
         self.results.append({
             'status' : 'ERROR',
-            'msg' : 'Failed: ' + sg,
+            'msg' : 'Failed: ' + msg,
         })
 
         self._uploadNext()

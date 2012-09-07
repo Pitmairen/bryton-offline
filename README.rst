@@ -12,6 +12,9 @@ This is a simple application for accessing Bryton GPS devices.
 * Show short summary of you rides.
 
 
+**Warning:** It has only been tested with a *Rider40*, i don't know if it works with other devices.
+
+
 Binary files for Windows
 ========================
 

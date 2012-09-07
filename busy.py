@@ -2,7 +2,7 @@ import math, sys
 from PyQt4.QtCore import Qt, QTimer, QUrl, pyqtSignal
 from PyQt4.QtGui import *
 
-
+from utils import resource_path
 
 
 
@@ -97,13 +97,13 @@ class MessageWidget(QWidget):
 
     def setError(self, msg):
         self.spinner.hide()
-        self._setIcon('img/error.png')
+        self._setIcon(resource_path('img/error.png'))
         self.icon.show()
         self.setMessage('<font color="red">'+msg+'</font>')
 
     def setDisconnected(self, msg):
         self.spinner.hide()
-        self._setIcon('img/connect.png')
+        self._setIcon(resource_path('img/connect.png'))
         self.icon.show()
         self.setMessage(msg)
 

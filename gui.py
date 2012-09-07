@@ -4,7 +4,7 @@ import datetime
 from os import path
 
 
-from PyQt4.QtCore import Qt, QTimer, QSize, pyqtSignal
+from PyQt4.QtCore import Qt, QSize, pyqtSignal
 from PyQt4.QtGui import (
     QWidget, QTabWidget, QListWidget, QLabel, QGroupBox, QPixmap,
     QProgressBar, QFrame, QListWidgetItem, QIcon, QPushButton,
@@ -20,7 +20,7 @@ import brytonsport
 
 from busy import MessageWidget
 from bryton import BrytonClient
-from utils import ProgressDialog
+from utils import ProgressDialog, resource_path
 
 
 #BrytonBridge versions
@@ -189,9 +189,9 @@ class HistoryWidget(QWidget):
         self.list.currentRowChanged.connect(self._onRowChanged)
 
 
-        self.delete_btn = QPushButton(QIcon('img/delete.png'), '', self)
-        self.save_btn = QPushButton(QIcon('img/save.png'), '', self)
-        self.upload_btn = QPushButton(QIcon('img/upload.png'), '', self)
+        self.delete_btn = QPushButton(QIcon(resource_path('img/delete.png')), '', self)
+        self.save_btn = QPushButton(QIcon(resource_path('img/save.png')), '', self)
+        self.upload_btn = QPushButton(QIcon(resource_path('img/upload.png')), '', self)
 
         for i, w in enumerate((self.delete_btn, self.save_btn, self.upload_btn)):
             w.setIconSize(QSize(22, 22))
@@ -213,9 +213,9 @@ class HistoryWidget(QWidget):
 
 
         upload_menu = QMenu('Upload tracks', self)
-        act = upload_menu.addAction(QIcon('img/strava-icon.png'), 'Upload to Strava.com')
+        act = upload_menu.addAction(QIcon(resource_path('img/strava-icon.png')), 'Upload to Strava.com')
         act.triggered.connect(self._onUploadStrava)
-        act = upload_menu.addAction(QIcon('img/bryton-icon.png'), 'Upload to Brytonsport.com')
+        act = upload_menu.addAction(QIcon(resource_path('img/bryton-icon.png')), 'Upload to Brytonsport.com')
         act.triggered.connect(self._onUploadBrytonSport)
 
 
@@ -445,15 +445,15 @@ class HistoryWidget(QWidget):
 class DeviceInfoWidget(QWidget):
 
     DEVICE_IMAGES = {
-        'rider20' : 'img/rider20_icon.jpg',
-        'rider30' : 'img/rider30_icon.jpg',
-        'rider35' : 'img/rider35_icon.jpg',
-        'rider40' : 'img/rider40_icon.jpg',
-        'rider50' : 'img/rider40_icon.jpg',
-        'rider' : 'img/rider_icon.jpg',
-        'cardio30' : 'img/cardio30_icon.jpg',
-        'cardio35' : 'img/cardio35_icon.jpg',
-        'cardio' : 'img/cardio_icon.jpg',
+        'rider20' : resource_path('img/rider20_icon.jpg'),
+        'rider30' : resource_path('img/rider30_icon.jpg'),
+        'rider35' : resource_path('img/rider35_icon.jpg'),
+        'rider40' : resource_path('img/rider40_icon.jpg'),
+        'rider50' : resource_path('img/rider50_icon.jpg'),
+        'rider' : resource_path('img/rider_icon.jpg'),
+        'cardio30' : resource_path('img/cardio30_icon.jpg'),
+        'cardio35' : resource_path('img/cardio35_icon.jpg'),
+        'cardio' : resource_path('img/cardio_icon.jpg'),
     }
 
 

@@ -1,9 +1,23 @@
 
+import sys
+import os
 
 from math import radians, sqrt, sin, cos, atan2
 
-
 from PyQt4.QtGui import QProgressBar, QDialog, QLabel, QVBoxLayout
+
+
+if getattr(sys, 'frozen', None):
+     _basedir = sys._MEIPASS
+else:
+     _basedir = os.path.dirname(__file__)
+
+
+def resource_path(name):
+
+    return os.path.join(_basedir, name)
+
+
 
 def indent_element_tree(elem, level=0):
     i = "\n" + level*"  "

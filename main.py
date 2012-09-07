@@ -7,7 +7,7 @@ import platform
 from PyQt4.QtGui import QApplication, QIcon
 
 from gui import MainWindow
-
+from utils import resource_path
 
 
 
@@ -34,7 +34,7 @@ def main():
 
     win.setFixedSize(600, 400)
     win.setWindowTitle('BrytonOffline')
-    win.setWindowIcon(QIcon('img/bryton_logo.jpg'))
+    win.setWindowIcon(QIcon(resource_path('img/bryton_logo.jpg')))
     win.show()
 
     return app.exec_()

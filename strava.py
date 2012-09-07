@@ -230,7 +230,7 @@ class AuthDialog(QDialog):
 
         l = QVBoxLayout()
 
-        l.addWidget(QLabel('Username:'))
+        l.addWidget(QLabel('Email:'))
         l.addWidget(self.username)
         l.addWidget(QLabel('Password:'))
         l.addWidget(self.password)

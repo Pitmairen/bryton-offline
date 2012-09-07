@@ -8,7 +8,7 @@ This is a simple application for accessing Bryton GPS devices.
 
 * Works without internet access.
 * Upload history to strava.com and brytonsport.com.
-* Save you history localy in .tcx and .bdx format.
+* Save you history in .tcx and .bdx format.
 * Show short summary of you rides.
 
 

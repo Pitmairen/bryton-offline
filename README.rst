@@ -19,7 +19,7 @@ Binary files for windows can be downloaded from here:
 https://docs.google.com/folder/d/0B9_cvlT9lotxOGJwamFqMTB5WTQ/edit
 
 *When using the brytonoffline.exe the output is not visible
-in the console so you will not se the error messages if something goes wrong.
+in the console so you will not see the error messages if something goes wrong.
 If you want to see debug messages you have to run it from source.*
 
 

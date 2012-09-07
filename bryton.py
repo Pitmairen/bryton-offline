@@ -74,7 +74,7 @@ class BrytonClient(QObject):
         self.connected.connect(self._getState)
         self.deviceReady.connect(self._refreshTrackList)
 
-        self.server = ServerThread('', server_port, self)
+        self.server = ServerThread(server_host, server_port, self)
 
         self.server.trackListUploaded.connect(self._onTrackListUploaded)
         self.server.trackDataUploaded.connect(self._onTrackDataUploaded)

@@ -291,7 +291,7 @@ class BrytonGPX(object):
                 pwr[0] += p['pwr']
                 pwr[1] += 1
                 if p['pwr'] > pwr[2]:
-                    prw[2] = p['pwr']
+                    pwr[2] = p['pwr']
 
 
 

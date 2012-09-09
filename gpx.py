@@ -173,7 +173,8 @@ class BrytonGPX(object):
             lap.append(None)
 
 
-        lap.pop() # remove last None
+        if lap:
+            lap.pop() # remove last None
 
 
         if len(laps) > 0 and lap:

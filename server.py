@@ -178,6 +178,7 @@ class TracksParser(object):
                     break
 
             if track['gpx'] is None:
+                log.debug('No match found')
                 raise ValueError('Invalid track data received')
 
         del self._data

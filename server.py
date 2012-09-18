@@ -281,6 +281,6 @@ class ServerThread(QThread):
                     self.trackListReady.emit(tracks)
                 except Exception, e:
                     log.debug('Failed to parse uploaded tracks')
-                    self.error.emit('Faild to parse uploaded tracks')
+                    self.error.emit('Failed to parse uploaded tracks')
 
 

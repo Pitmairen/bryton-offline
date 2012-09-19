@@ -75,8 +75,9 @@ def upload_track_data(req):
     with ZipFile(f.file) as zf:
 
         for name in zf.namelist():
+            log.debug('Filename: %s', name)
             if _filename_re.match(name):
-                log.debug('Filename %s', name)
+                log.debug('Matched re %s', name)
                 with zf.open(name) as gpxf:
 
                     data.append({

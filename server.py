@@ -42,6 +42,8 @@ def parse_track_list(data):
                 'name' : name.text,
             })
 
+
+    log.debug(ret)
     return ret
 
 
@@ -87,6 +89,7 @@ def upload_track_data(req):
 
     DATA.append(('track_data', data))
 
+    log.debug('Uploaded data track count %s', len(data))
 
     return 'ok'
 

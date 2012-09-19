@@ -171,6 +171,8 @@ class TracksParser(object):
                     track['gpx'] = data['data']
                 elif self._matchTrack(track['name'], data['data']):
                     track['gpx'] = data['data']
+                elif (track['id']+'.gpx') == ('T'+data['name']):
+                    track['gpx'] = data['data']
 
                 if track['gpx'] is not None:
                     log.debug('Found match')

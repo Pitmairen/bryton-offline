@@ -61,7 +61,7 @@ def upload_track_list(req):
     return 'ok'
 
 
-_filename_re = re.compile(r'\d{13}\.gpx')
+_filename_re = re.compile(r'\d{9,}\.gpx')
 
 def upload_track_data(req):
 

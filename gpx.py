@@ -50,7 +50,7 @@ class BrytonGPX(object):
 
 
         ret['distance'] = float(sum.find(_ns('NS-distance')).text)
-        ret['calories'] = int(sum.find(_ns('NS-calorie')).text)
+        ret['calories'] = int(float(sum.find(_ns('NS-calorie')).text))
         ret['altloss'] = float(sum.find(_ns('NS-altloss')).text)
         ret['altgain'] = float(sum.find(_ns('NS-altgain')).text)
 
@@ -73,10 +73,10 @@ class BrytonGPX(object):
 
         pwr = sum.find(_ns('NS-pwr'))
         if int(pwr.get('max')) > 0:
-            ret['pwr_avg'] = int(pwr.get('avg', 0))
-            ret['pwr_max'] = int(pwr.get('max', 0))
+            ret['pwr_avg'] = int(float(pwr.get('avg', 0)))
+            ret['pwr_max'] = int(float(pwr.get('max', 0)))
 
-        ret['ride_time'] = int(sum.find(_ns('NS-rtime')).text)
+        ret['ride_time'] = int(float(sum.find(_ns('NS-rtime')).text))
 
         return ret
 
@@ -151,11 +151,11 @@ class BrytonGPX(object):
 
                     cad = p.find(_ns('NS-cad'))
                     if cad is not None:
-                        point['cad'] = int(cad.text)
+                        point['cad'] = int(float(cad.text))
 
                     pwr = p.find(_ns('NS-pwr'))
                     if pwr is not None:
-                        point['pwr'] = int(pwr.text)
+                        point['pwr'] = int(float(pwr.text))
 
 
                 if recorded_laps and recorded_laps[0]['end'] < point['time']:

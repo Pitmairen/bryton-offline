@@ -470,7 +470,7 @@ class StravaUpload(QObject):
 
         # data_fields, data = bryton_gpx_to_strava_json(track['gpx'])
 
-        data = tcx.bryton_gpx_to_tcx(track['gpx'], pretty=False, device=self.device_info)
+        data = tcx.bryton_gpx_to_tcx(track['gpx'], activity_type=track_type, pretty=False, device=self.device_info)
 
 
         req = QNetworkRequest(QUrl(self.UPLOAD))

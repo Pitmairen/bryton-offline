@@ -285,6 +285,11 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
     xml.SubElement(version, _ns('BuildMajor')).text = '0'
     xml.SubElement(version, _ns('BuildMinor')).text = '0'
 
+    xml.SubElement(build, _ns('Type')).text = 'Release'
+
+
+    xml.SubElement(app, _ns('LangID')).text = 'EN'
+    xml.SubElement(app, _ns('PartNumber')).text = '000-0000-00'
 
 
     if pretty:

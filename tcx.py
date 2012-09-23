@@ -245,7 +245,12 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
 
         xml.SubElement(creator, _ns('Name')).text = 'Bryton '+device['name']
 
-        xml.SubElement(creator, _ns('UnitId')).text = device['serial']
+        unit_id = device['serial'][0:9]
+
+        if not unit_id.isdigit():
+            unit_id = '98761235'
+
+        xml.SubElement(creator, _ns('UnitId')).text = unit_id
 
         product_id = ''
         if 'Rider' in device['name']:
@@ -253,8 +258,8 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
         else:
             product_id += '2'
 
-        num = re.search(r'\d+$', device['name'])
-        product_id += num.group(0) if num is not None else '0'
+        num = re.search(r'\w+?(\d+)', device['name'])
+        product_id += num.group(1) if num is not None else '0'
 
         xml.SubElement(creator, _ns('ProductID')).text = product_id
 

@@ -68,7 +68,10 @@ SIMPLE_NO_SPEED_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -100,11 +103,6 @@ SIMPLE_SPEED_RESULT = """\
         <Calories>400</Calories>
         <Intensity>Active</Intensity>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -133,6 +131,11 @@ SIMPLE_SPEED_RESULT = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+          </a:LX>
+        </Extensions>
       </Lap>
     </Activity>
   </Activities>
@@ -145,7 +148,10 @@ SIMPLE_SPEED_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -186,11 +192,6 @@ SIMPLE_HR_RESULT = """\
         </MaximumHeartRateBpm>
         <Intensity>Active</Intensity>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -225,6 +226,11 @@ SIMPLE_HR_RESULT = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+          </a:LX>
+        </Extensions>
       </Lap>
     </Activity>
   </Activities>
@@ -237,7 +243,10 @@ SIMPLE_HR_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -279,13 +288,6 @@ SIMPLE_PWR_RESULT = """\
         </MaximumHeartRateBpm>
         <Intensity>Active</Intensity>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -322,6 +324,13 @@ SIMPLE_PWR_RESULT = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+            <a:AvgWatts>150</a:AvgWatts>
+            <a:MaxWatts>250</a:MaxWatts>
+          </a:LX>
+        </Extensions>
       </Lap>
     </Activity>
   </Activities>
@@ -334,7 +343,10 @@ SIMPLE_PWR_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -380,14 +392,6 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
         <Intensity>Active</Intensity>
         <Cadence>78</Cadence>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:MaxBikeCadence>78</a:MaxBikeCadence>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -426,6 +430,14 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+            <a:MaxBikeCadence>78</a:MaxBikeCadence>
+            <a:AvgWatts>150</a:AvgWatts>
+            <a:MaxWatts>250</a:MaxWatts>
+          </a:LX>
+        </Extensions>
       </Lap>
     </Activity>
   </Activities>
@@ -438,7 +450,10 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -461,15 +476,6 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
         </MaximumHeartRateBpm>
         <Intensity>Active</Intensity>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:MaxRunCadence>78</a:MaxRunCadence>
-            <a:AvgRunCadence>78</a:AvgRunCadence>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -508,6 +514,15 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+            <a:MaxRunCadence>78</a:MaxRunCadence>
+            <a:AvgRunCadence>78</a:AvgRunCadence>
+            <a:AvgWatts>150</a:AvgWatts>
+            <a:MaxWatts>250</a:MaxWatts>
+          </a:LX>
+        </Extensions>
       </Lap>
     </Activity>
   </Activities>
@@ -520,7 +535,10 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -539,11 +557,6 @@ SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
         <Calories>400</Calories>
         <Intensity>Active</Intensity>
         <TriggerMethod>Manual</TriggerMethod>
-        <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
-        </Extensions>
         <Track>
           <Trackpoint>
             <Time>2012-01-01T01:01:01Z</Time>
@@ -572,10 +585,15 @@ SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
             </Extensions>
           </Trackpoint>
         </Track>
+        <Extensions>
+          <a:LX>
+            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
+          </a:LX>
+        </Extensions>
       </Lap>
       <Creator xsi:type="Device_t">
         <Name>Bryton Rider40</Name>
-        <UnitID>12345</UnitID>
+        <UnitId>12345</UnitId>
         <ProductID>140</ProductID>
         <Version>
           <VersionMajor>005</VersionMajor>
@@ -595,7 +613,10 @@ SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -677,7 +698,10 @@ SIMPLE_WITH_PAUSE_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])
@@ -772,7 +796,10 @@ SIMPLE_WITH_MULTIPLE_LAPS_RESULT = """\
         <BuildMajor>0</BuildMajor>
         <BuildMinor>0</BuildMinor>
       </Version>
+      <Type>Release</Type>
     </Build>
+    <LangID>EN</LangID>
+    <PartNumber>000-00000-00</PartNumber>
   </Author>
 </TrainingCenterDatabase>
 """.format(*version.VERSION.split('.')[0:2])

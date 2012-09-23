@@ -105,37 +105,6 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
         trigger.text = 'Manual'
 
 
-        if 'speed_avg' in lap or 'cad_max' in lap:
-            ext = xml.SubElement(lap_el, _ns('Extensions'))
-
-            act_ext = xml.SubElement(ext, _activity_ext_ns('LX'))
-
-            if 'speed_avg' in lap:
-                avg_speed = xml.SubElement(act_ext, _activity_ext_ns('AvgSpeed'))
-                avg_speed.text = str(kph_to_ms(float(lap['speed_avg'])))
-
-
-            if 'cad_max' in lap:
-
-                if activity_type == 'ride':
-                    max_cad = xml.SubElement(act_ext, _activity_ext_ns('MaxBikeCadence'))
-                    max_cad.text = str(lap['cad_max'])
-                elif activity_type == 'run':
-                    max_cad = xml.SubElement(act_ext, _activity_ext_ns('MaxRunCadence'))
-                    max_cad.text = str(lap['cad_max'])
-
-                    avg_cad = xml.SubElement(act_ext, _activity_ext_ns('AvgRunCadence'))
-                    avg_cad.text = str(lap['cad_avg'])
-
-
-            if 'pwr_max' in lap:
-
-                avg_pwr = xml.SubElement(act_ext, _activity_ext_ns('AvgWatts'))
-                avg_pwr.text = str(lap['pwr_avg'])
-
-                max_pwr = xml.SubElement(act_ext, _activity_ext_ns('MaxWatts'))
-                max_pwr.text = str(lap['pwr_max'])
-
 
         track = xml.SubElement(lap_el, _ns('Track'))
 
@@ -232,6 +201,37 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
                     pwr.text = str(point['pwr'])
 
 
+
+        if 'speed_avg' in lap or 'cad_max' in lap:
+            ext = xml.SubElement(lap_el, _ns('Extensions'))
+
+            act_ext = xml.SubElement(ext, _activity_ext_ns('LX'))
+
+            if 'speed_avg' in lap:
+                avg_speed = xml.SubElement(act_ext, _activity_ext_ns('AvgSpeed'))
+                avg_speed.text = str(kph_to_ms(float(lap['speed_avg'])))
+
+
+            if 'cad_max' in lap:
+
+                if activity_type == 'ride':
+                    max_cad = xml.SubElement(act_ext, _activity_ext_ns('MaxBikeCadence'))
+                    max_cad.text = str(lap['cad_max'])
+                elif activity_type == 'run':
+                    max_cad = xml.SubElement(act_ext, _activity_ext_ns('MaxRunCadence'))
+                    max_cad.text = str(lap['cad_max'])
+
+                    avg_cad = xml.SubElement(act_ext, _activity_ext_ns('AvgRunCadence'))
+                    avg_cad.text = str(lap['cad_avg'])
+
+
+            if 'pwr_max' in lap:
+
+                avg_pwr = xml.SubElement(act_ext, _activity_ext_ns('AvgWatts'))
+                avg_pwr.text = str(lap['pwr_avg'])
+
+                max_pwr = xml.SubElement(act_ext, _activity_ext_ns('MaxWatts'))
+                max_pwr.text = str(lap['pwr_max'])
 
 
 

@@ -245,7 +245,7 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
 
         xml.SubElement(creator, _ns('Name')).text = 'Bryton '+device['name']
 
-        xml.SubElement(creator, _ns('UnitID')).text = device['serial']
+        xml.SubElement(creator, _ns('UnitId')).text = device['serial']
 
         product_id = ''
         if 'Rider' in device['name']:

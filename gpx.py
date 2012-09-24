@@ -179,7 +179,13 @@ class BrytonGPX(object):
 
         if len(laps) > 0 and lap:
 
-            laps.append(self._generateLastLap(laps, lap))
+            if len(lap) > 5:
+                laps.append(self._generateLastLap(laps, lap))
+            else:
+                # If there is very few points left we just add them
+                # to the last lap
+                laps[-1]['track_points'].extend(lap)
+
         elif lap:
             l = self.getSummary()
             l['track_points'] = lap

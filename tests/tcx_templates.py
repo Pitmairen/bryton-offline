@@ -92,7 +92,7 @@ _LAP['track_points'] = _POINTS
 SIMPLE_SPEED_LAPS = [_LAP]
 SIMPLE_SPEED_RESULT = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="{{sport}}">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -112,9 +112,9 @@ SIMPLE_SPEED_RESULT = """\
             </Position>
             <AltitudeMeters>63.0</AltitudeMeters>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -125,16 +125,16 @@ SIMPLE_SPEED_RESULT = """\
             </Position>
             <AltitudeMeters>63.0</AltitudeMeters>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+          </ns3:LX>
         </Extensions>
       </Lap>
     </Activity>
@@ -175,7 +175,7 @@ _LAP['track_points'] = _POINTS
 SIMPLE_HR_LAPS = [_LAP]
 SIMPLE_HR_RESULT = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="{{sport}}">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -204,9 +204,9 @@ SIMPLE_HR_RESULT = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -220,16 +220,16 @@ SIMPLE_HR_RESULT = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+          </ns3:LX>
         </Extensions>
       </Lap>
     </Activity>
@@ -271,7 +271,7 @@ _LAP['track_points'] = _POINTS
 SIMPLE_PWR_LAPS = [_LAP]
 SIMPLE_PWR_RESULT = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="{{sport}}">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -300,10 +300,10 @@ SIMPLE_PWR_RESULT = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -317,19 +317,19 @@ SIMPLE_PWR_RESULT = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+            <ns3:AvgWatts>150</ns3:AvgWatts>
+            <ns3:MaxWatts>250</ns3:MaxWatts>
+          </ns3:LX>
         </Extensions>
       </Lap>
     </Activity>
@@ -374,7 +374,7 @@ _LAP['track_points'] = _POINTS
 SIMPLE_CADENCE_LAPS = [_LAP]
 SIMPLE_CADENCE_RESULT_BIKING = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="Biking">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -405,10 +405,10 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
             </HeartRateBpm>
             <Cadence>78</Cadence>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -423,20 +423,20 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
             </HeartRateBpm>
             <Cadence>78</Cadence>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:MaxBikeCadence>78</a:MaxBikeCadence>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+            <ns3:MaxBikeCadence>78</ns3:MaxBikeCadence>
+            <ns3:AvgWatts>150</ns3:AvgWatts>
+            <ns3:MaxWatts>250</ns3:MaxWatts>
+          </ns3:LX>
         </Extensions>
       </Lap>
     </Activity>
@@ -459,7 +459,7 @@ SIMPLE_CADENCE_RESULT_BIKING = """\
 """.format(*version.VERSION.split('.')[0:2])
 SIMPLE_CADENCE_RESULT_RUNNING = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="Running">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -488,11 +488,11 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:RunCadence>78</a:RunCadence>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:RunCadence>78</ns3:RunCadence>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -506,22 +506,22 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
               <Value>140</Value>
             </HeartRateBpm>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-                <a:RunCadence>78</a:RunCadence>
-                <a:Watts>140</a:Watts>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+                <ns3:RunCadence>78</ns3:RunCadence>
+                <ns3:Watts>140</ns3:Watts>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-            <a:MaxRunCadence>78</a:MaxRunCadence>
-            <a:AvgRunCadence>78</a:AvgRunCadence>
-            <a:AvgWatts>150</a:AvgWatts>
-            <a:MaxWatts>250</a:MaxWatts>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+            <ns3:MaxRunCadence>78</ns3:MaxRunCadence>
+            <ns3:AvgRunCadence>78</ns3:AvgRunCadence>
+            <ns3:AvgWatts>150</ns3:AvgWatts>
+            <ns3:MaxWatts>250</ns3:MaxWatts>
+          </ns3:LX>
         </Extensions>
       </Lap>
     </Activity>
@@ -546,7 +546,7 @@ SIMPLE_CADENCE_RESULT_RUNNING = """\
 
 SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
 <?xml version='1.0' encoding='utf-8'?>
-<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:a="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v2 http://www.garmin.com/xmlschemas/ActivityExtensionv2.xsd">
   <Activities>
     <Activity Sport="Biking">
       <Id>2012-01-01T01:01:01Z</Id>
@@ -566,9 +566,9 @@ SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
             </Position>
             <AltitudeMeters>63.0</AltitudeMeters>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
           <Trackpoint>
@@ -579,16 +579,16 @@ SIMPLE_SPEED_RESULT_WITH_DEVICE = """\
             </Position>
             <AltitudeMeters>63.0</AltitudeMeters>
             <Extensions>
-              <a:TPX>
-                <a:Speed>6.11111111111</a:Speed>
-              </a:TPX>
+              <ns3:TPX>
+                <ns3:Speed>6.11111111111</ns3:Speed>
+              </ns3:TPX>
             </Extensions>
           </Trackpoint>
         </Track>
         <Extensions>
-          <a:LX>
-            <a:AvgSpeed>5.58333333333</a:AvgSpeed>
-          </a:LX>
+          <ns3:LX>
+            <ns3:AvgSpeed>5.58333333333</ns3:AvgSpeed>
+          </ns3:LX>
         </Extensions>
       </Lap>
       <Creator xsi:type="Device_t">

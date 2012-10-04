@@ -301,7 +301,12 @@ def bryton_gpx_to_tcx(gpx, activity_type='ride', device=None, pretty=False):
         indent_element_tree(root)
 
 
-    return "<?xml version='1.0' encoding='utf-8'?>\n"+xml.tostring(root)
+    # Because of bugs in other software we need to replace
+    # the "a" prefix with "ns3".
+    # ElementTree didn't let me manually register the ns3 prefix, so i
+    # need to replace it.
+    return "<?xml version='1.0' encoding='utf-8'?>\n"+xml.tostring(root) \
+            .replace('a:', 'ns3:').replace('xmlns:a', 'xmlns:ns3')
 
 
 

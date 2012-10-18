@@ -4,6 +4,10 @@ BrytonOffline
 
 This is a simple application for accessing Bryton GPS devices.
 
+**Warning: Its not safe to use with BrytonBridge version other that 2.2.0.36**
+
+
+
 **Features:**
 
 * Works without internet access.
